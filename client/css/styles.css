@@ -1,3 +1,12 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body a {
+  text-decorataion: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -20,7 +29,6 @@
 
 .header-container {
   background-color: red;
-  padding: 10rem;
 }
 
 .home-container {
@@ -70,6 +78,64 @@
 .home-container .home-nav ul li a:hover {
   box-shadow: 0 0 20px #eee;
   transition: 0.5s;
+}
+
+.teams .teams-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.teams .teams-container .single-team {
+  padding: 1rem;
+  width: 25%;
+}
+.teams .teams-container .single-team .single-team-inner {
+  padding: 1.5rem 0 0;
+  height: 100%;
+  background-color: #eee;
+  text-align: center;
+  display: flex;
+  justify-content: stretch;
+  align-content: center;
+  flex-direction: column;
+}
+.teams .teams-container .single-team .single-team-inner img {
+  margin: 0 auto 3rem;
+  width: 75%;
+}
+.teams .teams-container .single-team .single-team-inner h2 {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.teams .teams-container .single-team .single-team-inner p {
+  padding: 0 1rem;
+  font-weight: 300;
+}
+.teams .teams-container .single-team .single-team-inner .view-team {
+  padding: 0.5rem;
+  margin-top: auto;
+  width: 100%;
+  display: block;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid transparent;
+}
+.teams .teams-container .single-team .single-team-inner .view-team i {
+  padding-left: 1rem;
+}
+.teams .teams-container .single-team .single-team-inner .view-team:hover {
+  color: black;
+  border-bottom: 1px solid #ff8900;
+  transition: 0.25s;
+}
+.teams .teams-container .single-team .single-team-inner .view-team:hover i {
+  padding-left: 2rem;
+  transition: 0.25s;
 }
 
 /*# sourceMappingURL=styles.css.map */

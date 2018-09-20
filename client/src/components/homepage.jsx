@@ -22,7 +22,6 @@ class HomePage extends Component {
                     data: data,
                     isLoading: false
                 });
-                console.log(this.state.data.competitors);
             });
         this.timeout = setInterval(() => {
             let currentIdx = this.state.teamIdx;

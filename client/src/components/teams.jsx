@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import { render } from 'react-dom';
+import TeamList from './teamList';
 
-class Header extends Component {
+class Teams extends Component {
 
     constructor(props) {
         super(props);
@@ -12,6 +13,7 @@ class Header extends Component {
     }
 
     componentDidMount() {
+        // console.log(this.props);
         this.setState({ isLoading: false });
     }
 
@@ -20,12 +22,12 @@ class Header extends Component {
             return <h1>Loading</h1>;
         } else {
             return (
-                <div className="header-container">
-                    {/* <h1>Hello World</h1> */}
+                <div className="teams">
+                    <TeamList teams={this.props.competitorsFromParent} />
                 </div>
             );
         }
     }
 }
 
-export default Header;
+export default Teams;
