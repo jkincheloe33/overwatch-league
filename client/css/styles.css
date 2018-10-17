@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 body a {
   text-decorataion: none;
@@ -27,8 +28,18 @@ body a {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 
-.header-container {
-  background-color: red;
+.headerSlider .slick-list, .headerSlider .slick-track {
+  height: 100%;
+  width: 100%;
+}
+.headerSlider .slick-list .slideContainer, .headerSlider .slick-track .slideContainer {
+  padding: 15rem 0;
+  position: relative;
+  color: #fff;
+}
+.headerSlider .slick-list .slideContainer .headerContent, .headerSlider .slick-track .slideContainer .headerContent {
+  z-index: 3;
+  position: relative;
 }
 
 .home-container {

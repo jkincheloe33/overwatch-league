@@ -13,7 +13,6 @@ class Teams extends Component {
     }
 
     componentDidMount() {
-        // console.log(this.props);
         this.setState({ isLoading: false });
     }
 

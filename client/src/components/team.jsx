@@ -12,7 +12,6 @@ class Team extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
         this.setState({ isLoading: false });
     }
 

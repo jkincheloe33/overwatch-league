@@ -1,5 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
     a {
         text-decorataion: none;
         color: black;
@@ -27,11 +28,21 @@ body {
 }
 
 // Header Component
-.header-container {
-    background-color: red;
-    // padding: 10rem;
+.headerSlider {
+    .slick-list, .slick-track {
+        height: 100%;
+        width: 100%;
+        .slideContainer {
+            padding: 15rem 0;
+            position: relative;
+            color: #fff;
+            .headerContent {
+                z-index: 3;
+                position: relative;
+            }
+        }
+    }
 }
-
 // Landing Page
 .home-container {
     background-image: url('../img/crowd.jpg');
